@@ -177,11 +177,7 @@ else{
 }
 })
 
-
-
 var _count;
-
-
 
 
 $(".container").on("click",".itemFoto",function(){
