@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Пицца Конструктор</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<div class="page">
+		
+
+
+		
+		<main>
+			<div class="wrapper">
+				<h1>Пицца "Сделай сам"</h1>
+				<div class="item-box">
+
+					
+					<div class="topBox">
+						<div class="leftSide">
+							<img src="img/Custom_Pizza_3.jpg">
+							<img src="img/img1.png" class="parts" id="img1">
+							<img src="img/img2.png" class="parts" id="img2">
+							<img src="img/img3.png" class="parts" id="img3">
+							<img src="img/img4.png" class="parts" id="img4">
+							<img src="img/img6.png" class="parts" id="img6">
+							<img src="img/img7.png" class="parts" id="img7">
+							<img src="img/img8.png" class="parts" id="img8">
+							<img src="img/img10.png" class="parts" id="img10">
+							<img src="img/img11.png" class="parts" id="img11">
+							<img src="img/img12.png" class="parts" id="img12">
+							<img src="img/img13.png" class="parts" id="img13">
+							<img src="img/img14.png" class="parts" id="img14">
+							<img src="img/img15.png" class="parts" id="img15">
+							<img src="img/img16.png" class="parts" id="img16">
+							<img src="img/img17.png" class="parts" id="img17">
+							<img src="img/img18.png" class="parts" id="img18">
+							<img src="img/img20.png" class="parts" id="img20">
+							<img src="img/img21.png" class="parts" id="img21">
+							<img src="img/img22.png" class="parts" id="img22">
+							<img src="img/img23.png" class="parts" id="img23">
+							<img src="img/img24.png" class="parts" id="img24">
+							<img src="img/img25.png" class="parts" id="img25">
+							<img src="img/img26.png" class="parts" id="img26">
+							<img src="img/img27.png" class="parts" id="img27">
+							<img src="img/img28.png" class="parts" id="img28">
+							<img src="img/img29.png" class="parts" id="img29">
+							<img src="img/img30.png" class="parts" id="img30">
+							<img src="img/img31.png" class="parts" id="img31">
+							<img src="img/img32.png" class="parts" id="img32">
+							<img src="img/img39.png" class="parts" id="img39">
+							<img src="img/img40.png" class="parts" id="img40">
+							<img src="img/img41.png" class="parts" id="img41">
+							<img src="img/img42.png" class="parts" id="img42">
+							<img src="img/img43.png" class="parts" id="img43">
+						</div>
+						<div class="rightSide">
+							<h1 class="item-title">Пицца Конструктор</h1>
+							<div class="dough">
+								<div class="doughName">
+									<div class="doughNameConst">Тесто</div>
+									<div class="doughNameVariable">Американо</div>
+								</div>
+								<div class="doughFoto">
+									<div class="doughFoto1"></div>
+									<div class="doughFoto2"></div>
+									<div class="doughFoto3"></div>
+								</div>
+							</div>
+							<div class="size">
+								<div class="sizeName">
+									<div class="sizeNameConst">Размер</div>
+									<div class="sizeNameVariable">30 см</div>
+								</div>
+								<div class="sizeFoto">
+									<div class="sizeFoto1" data-weight=630 data-price=60></div>
+									<div class="sizeFoto2" data-weight=470 data-price=40></div>
+									<div class="sizeFoto3" data-weight=340 data-price=30></div>
+								</div>
+							</div>
+							<div class="sauce">
+								<div class="sauceName">
+									<div class="sauceNameConst">Соус</div>
+									<div class="sauceNameVariable">Гарлик</div>
+								</div>
+								<div class="sauceFoto">
+									<div class="sauceFoto1"></div>
+									<div class="sauceFoto2"></div>
+									<div class="sauceFoto3"></div>
+									<div class="sauceFoto4"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="middleBox">
+						<div class="middleBoxLeft">
+							<h2 class="title-h2">Ваша пицца состоит из</h2>
+							<div class="container">
+								<div class="itemSauce">
+									<div class="itemFoto1"><img src="img/1.png"></div>
+									<div class="itemText">
+										<select id="select">
+											<option>Томатный(основа)</option>
+											<option>Ранч(основа)</option>
+											<option>Чесночный(основа)</option>
+											<option>Сливочный соус Альфредо(основа)</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="middleBoxRight">
+							<h2 class="title-h2">Дополнительные начинки</h2>
+							<div class="changeItem">
+								<div class="fish"></div>
+								<div class="meat"></div>
+								<div class="vegetables"></div>
+								<div class="cheese"></div>
+								<div class="flavoring"></div>
+							</div>
+							<div class="containerForItem">
+								
+								<div class="fishItem">
+									<div class="item" data-weight=30 data-price=13 data-position=1 id="pos1">
+										<div class="itemFoto"><img src="img/3.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Кальмары</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">30 гр</span>
+											<span class="price">13 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=35 data-price=50 data-position=2 id="pos2">
+										<div class="itemFoto"><img src="img/4.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Креведки</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">35 гр</span>
+											<span class="price">50 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=60 data-price=30 data-position=3 id="pos3">
+										<div class="itemFoto"><img src="img/5.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Мидии</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">60 гр</span>
+											<span class="price">30 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=60 data-price=55 data-position=4 id="pos4">
+										<div class="itemFoto"><img src="img/6.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Сёмга</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">60 гр</span>
+											<span class="price">55 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=30 data-price=12 data-position=5 id="pos5">
+										<div class="itemFoto"><img src="img/7.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Крабовое мясо</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">30 гр</span>
+											<span class="price">12 грн</span>
+										</div>
+									</div>
+									
+								</div>
+
+								
+
+
+								
+								<div class="meatItem">
+									<div class="item" data-weight=45 data-price=13 data-position=6 id="pos6">
+										<div class="itemFoto"><img src="img/8.png"><div class="count"></div></div>
+										<div class="itemText"><span>Бекон</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">45 гр</span>
+											<span class="price">13 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=45 data-price=10 data-position=7 id="pos7">
+										<div class="itemFoto"><img src="img/9.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Ветчина</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">45 гр</span>
+											<span class="price">10 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=50 data-price=16 data-position=8 id="pos8">
+										<div class="itemFoto"><img src="img/10.png"><div class="count"></div></div>
+										<div class="itemText"><span>Итальянские колбаски</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">50 гр</span>
+											<span class="price">16 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=45 data-price=8 data-position=9 id="pos9">
+										<div class="itemFoto"><img src="img/11.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Венские колбаски</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">45 гр</span>
+											<span class="price">8 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=45 data-price=12 data-position=10 id="pos10">
+										<div class="itemFoto"><img src="img/12.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Баварские колбаски</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">45 гр</span>
+											<span class="price">12 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=60 data-price=16 data-position=11 id="pos11">
+										<div class="itemFoto"><img src="img/13.png"><div class="count"></div></div>
+										<div class="itemText"><span>Копченая курица</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">60 гр</span>
+											<span class="price">16 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=50 data-price=13 data-position=12 id="pos12">
+										<div class="itemFoto"><img src="img/14.png"><div class="count"></div></div>
+										<div class="itemText"><span>Курица гриль</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">50 гр</span>
+											<span class="price">13 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=45 data-price=20 data-position=13 id="pos13">
+										<div class="itemFoto"><img src="img/15.png"><div class="count"></div></div>
+										<div class="itemText"><span>Салями Пепперони</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">45 гр</span>
+											<span class="price">20 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=50 data-price=15 data-position=14 id="pos14">
+										<div class="itemFoto"><img src="img/16.png"><div class="count"></div></div>
+										<div class="itemText"><span>Говядина</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">50 гр</span>
+											<span class="price">15 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=50 data-price=12 data-position=15 id="pos15">
+										<div class="itemFoto"><img src="img/18.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Фрикадельки</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">50 гр</span>
+											<span class="price">12 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=60 data-price=18 data-position=16 id="pos16">
+										<div class="itemFoto"><img src="img/19.png"><div class="count"></div></div>
+										<div class="itemText"><span>Люля Кебаб</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">60 гр</span>
+											<span class="price">18 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=60 data-price=13 data-position=17 id="pos17">
+										<div class="itemFoto"><img src="img/20.png"><div class="count"></div></div>
+										<div class="itemText"><span>Куриные Стрипсы</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">60 гр</span>
+											<span class="price">13 грн</span>
+										</div>
+									</div>
+									
+
+
+
+								</div>
+
+
+
+
+
+								
+								<div class="vegetablesItem">
+									<div class="item" data-weight=10 data-price=6 data-position=18 id="pos18">
+										<div class="itemFoto"><img src="img/21.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Кунжутный бортик</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">10 гр</span>
+											<span class="price">6 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=2 data-price=4 data-position=19 id="pos19">
+										<div class="itemFoto"><img src="img/22.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Орегано</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">2 гр</span>
+											<span class="price">4 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=16 data-price=11 data-position=20 id="pos20">
+										<div class="itemFoto"><img src="img/23.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Перчик Халапеньо</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">16 гр</span>
+											<span class="price">11 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=5 data-price=4 data-position=21 id="pos21">
+										<div class="itemFoto"><img src="img/24.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Петрушка</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">5 гр</span>
+											<span class="price">4 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=30 data-price=8 data-position=22 id="pos22">
+										<div class="itemFoto"><img src="img/25.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Ананас</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">30 гр</span>
+											<span class="price">8 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=30 data-price=6 data-position=23 id="pos23">
+										<div class="itemFoto"><img src="img/26.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Кукуруза</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">30 гр</span>
+											<span class="price">6 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=25 data-price=3 data-position=24 id="pos24">
+										<div class="itemFoto"><img src="img/27.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Лук</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">25 гр</span>
+											<span class="price">3 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=25 data-price=9 data-position=25 id="pos25">
+										<div class="itemFoto"><img src="img/28.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Маслины</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">25 гр</span>
+											<span class="price">9 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=35 data-price=5 data-position=26 id="pos26">
+										<div class="itemFoto"><img src="img/29.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Огурец маринованный</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">35 гр</span>
+											<span class="price">5 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=25 data-price=9 data-position=27 id="pos27">
+										<div class="itemFoto"><img src="img/30.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Оливки</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">25 гр</span>
+											<span class="price">9 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=30 data-price=11 data-position=28 id="pos28">
+										<div class="itemFoto"><img src="img/31.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Перец болгарский</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">30 гр</span>
+											<span class="price">11 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=70 data-price=9 data-position=29 id="pos29">
+										<div class="itemFoto"><img src="img/32.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Помидор</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">70 гр</span>
+											<span class="price">9 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=40 data-price=6 data-position=30 id="pos30">
+										<div class="itemFoto"><img src="img/33.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Шампиньоны</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">40 гр</span>
+											<span class="price">6 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=40 data-price=12 data-position=31 id="pos31">
+										<div class="itemFoto"><img src="img/34.png"><div class="count"></div></div>
+										<div class="itemText"><span>Опята</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">40 гр</span>
+											<span class="price">12 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=60 data-price=17 data-position=32 id="pos32">
+										<div class="itemFoto"><img src="img/35.png"><div class="count"></div></div>
+										<div class="itemText"><span>Баклажан</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">60 гр</span>
+											<span class="price">17 грн</span>
+										</div>
+									</div>
+
+
+
+								</div>
+
+
+								
+								<div class="cheeseItem">
+									<div class="item" data-weight=40 data-price=33 data-position=33 id="pos33">
+										<div class="itemFoto"><img src="img/36.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Дор Блю</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">40 гр</span>
+											<span class="price">33 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=70 data-price=15 data-position=34 id="pos34">
+										<div class="itemFoto"><img src="img/2.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Моцарелла</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">70 гр</span>
+											<span class="price">15 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=30 data-price=14 data-position=35 id="pos35">
+										<div class="itemFoto"><img src="img/37.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Пармезан</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">30 гр</span>
+											<span class="price">14 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=40 data-price=13 data-position=36 id="pos36">
+										<div class="itemFoto"><img src="img/38.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Фета</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">40 гр</span>
+											<span class="price">13 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=40 data-price=13 data-position=37 id="pos37">
+										<div class="itemFoto"><img src="img/39.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Филадельфия сыр</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">40 гр</span>
+											<span class="price">13 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=60 data-price=16 data-position=38 id="pos38">
+										<div class="itemFoto"><img src="img/40.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Чеддер</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">60 гр</span>
+											<span class="price">16 грн</span>
+										</div>
+									</div>
+								</div>
+
+
+
+
+
+
+								
+								<div class="flavoringItem">
+									<div class="item" data-weight=40 data-price=10 data-position=39 id="pos39">
+										<div class="itemFoto"><img src="img/41.png"><div class="count"></div></div>
+										<div class="itemText"><span>Остро-сладкий</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">40 гр</span>
+											<span class="price">10 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=30 data-price=10 data-position=40 id="pos40">
+										<div class="itemFoto"><img src="img/42.png"><div class="count"></div></div>
+										<div class="itemText"><span>Барбекью</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">30 гр</span>
+											<span class="price">10 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=40 data-price=10 data-position=41 id="pos41">
+										<div class="itemFoto"><img src="img/43.jpg"><div class="count"></div></div>
+										<div class="itemText"><span>Ранч</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">40 гр</span>
+											<span class="price">10 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=40 data-price=10 data-position=42 id="pos42">
+										<div class="itemFoto"><img src="img/44.png"><div class="count"></div></div>
+										<div class="itemText"><span>Сацебели</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">40 гр</span>
+											<span class="price">10 грн</span>
+										</div>
+									</div>
+									<div class="item" data-weight=40 data-price=10 data-position=43 id="pos43">
+										<div class="itemFoto"><img src="img/45.png"><div class="count"></div></div>
+										<div class="itemText"><span>Карри</span><span class="delItem">-</span></div>
+										<div class="specification">
+											<span class="weight">40 гр</span>
+											<span class="price">10 грн</span>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+
+					</div>
+					
+					<div class="bottomBox">
+						<span class="maxSize"></span>
+						<div class="order">
+							<span class="orderPrice"> 40</span> грн /
+							<span class="orderWeight"> 470</span>гр
+						</div>
+						<button class="orderButton">В корзину</button>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		
+
+
+
+
+		
+		</div>
+	</body>
+	</html>
